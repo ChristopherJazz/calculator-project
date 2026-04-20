@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #1e1e1e;
+  font-family: Arial, sans-serif;
+}
+
+/* Calculator container */
+.calculator {
+  background: #2c2c2c;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Display */
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  background: #111;
+  color: #fff;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* All buttons */
+button {
+  flex: 1 0 22%; /* 4 buttons per row */
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Hover effect */
+button:hover {
+  background: #666;
+}
+
+/* Active click effect */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Zero button takes 2 spaces */
+.zero {
+  flex: 1 0 48%;
+}
+
+/* Special buttons */
+#clear {
+  background: #e74c3c;
+}
+
+#backspace {
+  background: #f39c12;
+}
+
+#equals {
+  background: #2ecc71;
+}
+
+/* Operators */
+.operator {
+  background: #3498db;
+}
