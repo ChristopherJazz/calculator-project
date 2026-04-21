@@ -1,3 +1,12 @@
+const display = document.getElementById("display");
+
+// Select buttons
+const numberButtons = document.querySelectorAll(".number");
+const operatorButtons = document.querySelectorAll(".operator");
+const clearBtn = document.getElementById("clear");
+const backspaceBtn = document.getElementById("backspace");
+const equalsBtn = document.getElementById("equals");
+
 //Operator functions
 
 function add(a, b) {
